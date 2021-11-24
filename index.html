@@ -317,33 +317,71 @@
 
       <form id="frm-cadastro" action="" method="POST" enctype="multipart/form-data">
         
-        <!-- qualquer campo no formulario usa a tag input  -->
-        <!-- classe form control é do bootstrap  -->
-        <!-- tag name é o que as linguagens usa pra capturar o que ser digitado no formulario  -->
-        <!-- tag placeholder é o nome do campo dentro da caixa/ tag required é dizer que o campo é obrigatorio  -->
-        <input type="text" class="form-control" name="nome" placeholder="Nome:" required >
-        <input type="email" class="form-control" name="email" placeholder="E-mail:" required>
-        
-      
-      
+            <!-- qualquer campo no formulario usa a tag input  -->
+            <!-- classe form control é do bootstrap  -->
+            <!-- tag name é o que as linguagens usa pra capturar o que ser digitado no formulario  -->
+            <!-- tag placeholder é o nome do campo dentro da caixa/ tag required é dizer que o campo é obrigatorio  -->
+            <input type="text" class="form-control mb-3" name="nome" placeholder="Nome:" required >
+            <input type="email" class="form-control mb-3" name="email" placeholder="E-mail:" required>
+
+
+            <p>Idade: <span id="info-idade"> </span> </p>
+            <!-- colocando a barra range para aumentar a idade ou similares  -->
+            <!-- tag min e max define as idades minimas que o formulario aceita/ value considera o valor inicial / o value é pra formularios que o usuario nao digita  -->
+            <input type="range" class="form-range" name="idade" id="idade" min="12" max="70" value="12"  >
+
+            <!-- colocando o sexo da pessoa  -->
+            <!-- type radio seleciona as bolinhas o name precisa ser igual pra ser selecionado somente 1 deles  -->
+            <p> Sexo:</p>
+            <input type="radio" class="form-check-input" name="sexo" value="Feminino" required > Feminino
+            <input type="radio" class="form-check-input" name="sexo" value="Masculino" required > Masculino
+
+            <!-- sempre no checkbox colocar os colchetes [] que é uma lista de opções no name pra ele armazenar todas clicadas que o usuario marcar-->
+            <p class="mt-3"> Atividades de laser: 
+              <br> <input type="checkbox" class="form-check-input" name="laser[]" value="Cinema" > Cinema
+              <br> <input type="checkbox" class="form-check-input" name="laser[]" value="Esportes"> Esportes
+              <br> <input type="checkbox" class="form-check-input" name="laser[]" value="Viajar"> Viajar
+              <br> <input type="checkbox" class="form-check-input" name="laser[]" value="Video-Game"> Video-Game
+            </p>
+
+            <p> Foto de perfil: (opcional)</p>
+            <input type="file" name="foto" id="foto" class="form-control"  >
+
+            <p class="mt-3">Qual estado você mora? </p>
+                <select name="estado" id="estado" class="form-select">
+                  <option>Selecione</option>
+                  <option value="Acre">Acre</option>
+                  <option value="Bahia">Bahia</option>
+                  <option value="Ceará">Ceará</option>
+                </select>
+
+                <br>
+                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite uma senha">
+
+                <br>
+                <input type="submit" class="btn-primary" value="Enviar">
+                
+
+
+
+                <footer class="container mt-5 bg-empresa">
+                  <p>Estamos localizados no endereço abaixo:</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.731606193116!2d-45.85970938502924!3d-23.179993884873557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bc860146b3f%3A0x3f46f39d9e59d193!2sR.%20Saigiro%20Nakamura%20-%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%2C%20SP%2C%2012220-280!5e0!3m2!1spt-BR!2sbr!4v1637765129697!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+
+                </footer>
       
       </form>
-
-
-
-
    </div>
-
-
-
-
-
-
 
 <!-- final formulario cadastro  -->
 
 
-
+<p></p><br> <p></p> <br> <p></p><br>
 
 
 
