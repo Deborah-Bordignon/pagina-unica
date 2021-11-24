@@ -1,0 +1,93 @@
+
+/* colocando tudo que esta atras de volta a vista como o txt h1 */
+body{
+
+    margin-top: 70px;
+}
+
+/* mudando a cor da barra */
+.bg-empresa{
+
+    background-color: rgb(7, 190, 214);
+}
+
+
+.navbar{
+    /* colocando espaço na barra de navegação  */
+    padding-top: 0rem;
+
+}
+
+
+#carousel-destaques{
+    /* colocanco o carousel no centro e com 80% tela */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo{
+
+    /* colocando uma borda em baixo dos titulos na cor cinza primeiro valor segundo solid terceiro cor  */
+    border-bottom: 8px solid #777;
+
+    /* largura conforme o texto  */
+    width: fit-content; 
+
+    /* centralizando  */
+    margin: 0 auto;
+
+}
+
+/* colocando um fundo preto na descrição do carousel usando um pouco de transparência */
+.carousel-caption{
+
+    background-color: rgba(0, 0, 0, 0.61) ;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color:rgb(255, 255, 255);
+    /* text shadow sempre sao 4 valores  deslocamento pra direita deslocamento pra baixo esfumaçamento e a cor */
+    text-shadow: 1px 1px 0px #000 ;
+    font-weight: bold;
+    font-family:'Montserrat Alternates', sans-serif;
+    
+}
+
+#planos .card-header{
+
+    padding: 18px;
+    background-color: #777;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#planos .card-footer{
+
+    background-color: rgb(216, 240, 219);
+}
+
+#planos mark{
+
+    background-color: rgb(216, 240, 219);
+}
+
+.bg-header-cinza-claro{
+
+    background-color: #999 !important
+    /* quando vc colocar !important no código vc força a barra pra que o navegador aceite sua regra css  */
+    /* usado em excessões  */
+
+}
+
+#equipe .btn{
+
+    padding: 10px;
+}
+
+
+
+

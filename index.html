@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marketing Company</title>
+
+    <!-- font awesome carregando bibliotecas dos icones -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <!-- carregando o bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </script>
+  <!-- Aos Animate  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--carregando o css do ligthbox  -->
+  <link rel="stylesheet" href="css/lightbox.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+
+  <!-- nosso css ultimo a ser carregado -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+
+
+<body>
+
+<!-- inicio barra de navegação menu -->
+
+<!-- fixed top - trava a barra de navegação no top colocando na classe  -->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-empresa"> <!--Quando nao tiver a cor que vc quiser de fundo da barra de navegação nav bar so criar a nossa regra css com a classe bg.empresa e muda a cor collor -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">  <i class="fab fa-apple fa-2x"></i> Markenting Company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+              <!-- mudando com ms-auto o menu pra esquerda -->
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="#">Planos</a>
+              <a class="nav-link" href="#">Quem somos</a>
+              <a class="nav-link" href="#">Potifólio</a>
+              <a class="nav-link" href="#">Contato</a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      <!-- final menu barra de navegação --> 
+
+      <!-- colocando uma margem do lado esquerdo com ms - 5 ( onde 5 é o maximo) -->
+      <h1 class="ms-5">Marketing Company</h1>
+      <p class="ms-5">Desenvolvido por <strong>Deborah Bordignon</strong></p>
+
+
+
+      <!-- carousel  -->
+
+      <!-- pra esconder alguma parte em diferentes tamanhos de tela usar na classe o d-nome/esconder e d-md-block/ a partir de telas médias pode exibir nosso carousel  -->
+
+      <div id="carousel-destaques" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-destaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-destaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-destaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/coffee.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>IMG 1</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/sound.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>IMG 2</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/workbench.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>IMG 3</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-destaques" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-destaques" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- final carousel  -->
+
+
+       <!-- seção serviços -->
+    <div id="servicos" class="mt-5 container" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+      <h2 class="titulo text-center mb-3">Nossos Serviços</h2>
+
+      <div class="row">
+        <div class="col-md bg-success">
+            <h3>Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+        </div>
+        <div class="col-md bg-warning">
+          <h3>Marca</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+        </div>
+        <div class="col-md bg-secondary">
+          <h3>Consultoria</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+        </div>
+        <div class="col-md bg-info">
+          <h3>Compromisso</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet eius consequatur cumque soluta perspiciatis corrupti at quas magnam. Quasi, voluptatum repellendus fugit corporis architecto numquam voluptate iure illum fuga?</p>
+        </div>
+      </div>
+
+      
+  </div>
+  <!-- final seção servicos -->
+      
+
+
+<!-- seção planos -->
+<div id="planos" class="container mt-5" >
+  <h2 class="titulo text-center mb-3">Nossos Planos</h2>
+  <p class="text-center"><mark>Consulte nossos planos e preços</mark></p>
+
+  <div class="row">
+    <div class="col-md mt-3" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+      <div class="card">
+        <div class="card-header text-center"> Básico  </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"> <strong><mark>10GB</mark></strong>  Armazenamento</li>
+            <li class="list-group-item"> <strong>10</strong> Email</li>
+            <li class="list-group-item"><strong>10</strong> Dominios</li>
+            <li class="list-group-item">Suporte <strong>ilimitado</strong></li>
+            <li class="list-group-item"><strong>R$ 10</strong> Mensal</li>
+          </ul>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success">Assinar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md mt-3" data-aos="flip-left" data-aos-delay="600">
+      <div class="card">
+        <div class="card-header text-center bg-header-cinza-claro"> Pró </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"><strong><mark>25GB</mark> </strong>Armazenamento</li>
+            <li class="list-group-item"><strong>25</strong> Email</li>
+            <li class="list-group-item"><strong>25</strong> Dominios</li>
+            <li class="list-group-item">Suporte <strong>ilimitado</strong></li>
+            <li class="list-group-item"><strong>R$ 25</strong> Mensal</li>
+          </ul>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success">Assinar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md mt-3" data-aos="flip-left" data-aos-delay="900">
+      <div class="card">
+        <div class="card-header text-center"> Premium </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item"><strong><mark>50GB</mark></strong> Armazenamento</li>
+            <li class="list-group-item"><strong>50</strong> Email</li>
+            <li class="list-group-item"><strong>50</strong> Dominios</li>
+            <li class="list-group-item">Suporte <strong>ilimitado</strong></li>
+            <li class="list-group-item"><strong>R$ 50</strong> Mensal</li>
+          </ul>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success">Assinar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- final seção planos -->
+
+
+
+
+<!-- inicio Seção equipe  -->
+
+<!-- mt margem superior e mb margem inferior -->
+<!-- a classe container da o espaçamento  -->
+
+<div id="equipe" class=" container mt-5">
+  <h2 class="titulo mb-3">Nossa Equipe</h2>
+
+  <!-- pra que as colunas fiquem uma ao lado da outra usar uma div com a class row e fazer dentro delas as colunas  -->
+<div class="row">
+  
+  <!-- colocar col = a um numero a soma das colunas tem que ser = a 12 ou menor  -->
+  <!-- e se quiser as colunas com as mesmas larguras não definir o tamanho col-6/ só col  -->
+  <!-- usando col-md ele fica um em cima do outro sem fazer as colunas quando a tela diminuir  -->
+
+  <div class="col-md" data-aos="flip-up" data-aos-delay="300" >
+    <div class="card">
+      <img src="imagens/team1.jpg" class="card-img-top" alt="Foto da Diretora de criação">
+      <div class="card-body text-center" >
+        <h5 class="card-title"><strong><mark>Samantha Perreira</mark></strong></h5>
+        <p class="card-text">Diretora de criação</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia harum pariatur, tempore quae deserunt voluptate beatae debitis veritatis! Id, corporis. Id molestias eveniet, a eaque esse amet suscipit dolores soluta!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores beatae eos iste excepturi rerum dolorum odio accusamus pariatur aut. Possimus facere velit aspernatur eum. Exercitationem possimus repellendus cupiditate quisquam!
+        </p>
+        <a href="#" class="btn btn-secondary w-100">CONTATO</a>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md" data-aos="flip-up" data-aos-delay="700" >
+      <div class="card">
+        <img src="imagens/team2.jpg" class="card-img-top" alt="Foto da Diretor Administrativo">
+        <div class="card-body text-center" >
+          <h5 class="card-title"><strong><mark>Matheus Campos</mark></strong></h5>
+          <p class="card-text">Diretor Administrativo</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia harum pariatur, tempore quae deserunt voluptate beatae debitis veritatis! Id, corporis. Id molestias eveniet, a eaque esse amet suscipit dolores soluta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores beatae eos iste excepturi rerum dolorum odio accusamus pariatur aut. Possimus facere velit aspernatur eum. Exercitationem possimus repellendus cupiditate quisquam!
+          </p>
+          <a href="#" class="btn btn-secondary w-100">CONTATO</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md" data-aos="flip-up" data-aos-delay="1000">
+
+      <div class="card">
+       <img src="imagens/team3.jpg" class="card-img-top" alt="Foto do CEO/FUNDADOR">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong><mark>George Ferreira</mark></strong></h5>
+          <p class="card-text">Ceo e Fundador</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia harum pariatur, tempore quae deserunt voluptate beatae debitis veritatis! Id, corporis. Id molestias eveniet, a eaque esse amet suscipit dolores soluta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores beatae eos iste excepturi rerum dolorum odio accusamus pariatur aut. Possimus facere velit aspernatur   eum. Exercitationem possimus repellendus cupiditate quisquam!
+          </p>
+          <a href="#" class="btn btn-secondary w-100 ">CONTATO</a>
+        </div>
+      </div>
+    </div>
+</div>  
+</div>
+
+<!-- Final Seção equipe  -->
+
+
+
+
+<!-- ínicio seção portifólio ligtbox -->
+
+  <div id="portifolio" class="mt-5 text-center" data-aos="zoom-in-down" data-aos-delay="200" data-aos-duration="500" >
+    <h2 class="mb-3 text-center titulo">Portifólio</h2>
+
+     <!-- data-lightbox é o atributo pra fazer o efeito de clicar na pequena e abrir a maior em lighbox  -->
+
+    <a href="imagens/img-grande-1.jpg" data-lightbox= "roadtrip"><img src="imagens/miniatura-1.jpg" alt=""></a>
+    <a href="imagens/img-grande-2.png" data-lightbox= "roadtrip"><img src="imagens/miniatura-2.jpg" alt=""></a>
+    <a href="imagens/img-grande-3.jpg" data-lightbox= "roadtrip"><img src="imagens/miniatura-3.jpg" alt=""></a>
+    <a href="imagens/img-grande-4.jpg" data-lightbox= "roadtrip"><img src="imagens/miniatura-4.jpg" alt=""></a>
+    <a href="imagens/img-grande-5.jpg" data-lightbox= "roadtrip"><img src="imagens/miniatura-5.jpg" alt=""></a>
+    <a href="imagens/img-grande-6.jpg" data-lightbox= "roadtrip"><img src="imagens/miniatura-6.jpg" alt=""></a>
+
+  </div>
+
+
+
+
+<!-- final seção portifólio -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- carregando os js- java script botstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!-- Aos animate  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- carregando o jquery antes do lightbox  -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- carregando o js do lightbox  -->
+<script src="js/lightbox.js"></script>
+
+
+
+<!-- nosso java sempre o ultimo a ser carregado -->
+<script src="js/code.js"></script>
+
+
+</body>
+</html>
