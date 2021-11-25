@@ -88,9 +88,24 @@ body{
     padding: 10px;
 }
 
+/* colocando o visual da seta topo  */
 #seta-sobe{
-    opacity: 50%;
-    
+
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 46px;
+    height: 46px;
+    font-size: 28px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.295);
+    font-size: 28px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 4px;
+
+  
 
 }
 
