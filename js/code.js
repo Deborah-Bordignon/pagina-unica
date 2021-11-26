@@ -7,6 +7,7 @@ AOS.init();
     var url= 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
     var select = document.getElementById('estado');
    
+   
 
     /* Consulta a API com o método fetch e
     com um laço de repetição incrementa as tags option */
@@ -16,17 +17,25 @@ AOS.init();
 
     .then(json => {  
         var options = '<option>Selecione</option>';
-        //inserir abaixo desta linha um código pra ordenar em alfabética o objeto json
-        
 
-        //laço de repetição
+        //inserir abaixo desta linha um código pra ordenar em alfabética o objeto json
+        json.sort(function(a,b){
+            return a.nome < b.nome ? -1 : a.nome > b.nome ? 1:0;
+
+        })
+
+       //laço repetição
         for 
         (let index = 0; index < json.length; index++) {
            options += '<option>'+json[index].nome+' </option>.';
+           
          
-
         } 
         select.innerHTML = options;
     })
     .catch(erro => console.log(erro));   // tratamento de erro 
+
+ 
 })();
+
+ 
